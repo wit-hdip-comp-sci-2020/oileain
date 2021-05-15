@@ -1,8 +1,9 @@
 <script lang="ts">
   import Icon from "svelte-awesome";
-  import { faGithub } from "@fortawesome/free-brands-svg-icons";
-  import { faMap } from "@fortawesome/free-regular-svg-icons";
-  import { faBars, faMapMarked } from "@fortawesome/free-solid-svg-icons";
+  import {faGithub} from "@fortawesome/free-brands-svg-icons";
+  import {faMap} from "@fortawesome/free-regular-svg-icons";
+  import {faBars, faMapMarked} from "@fortawesome/free-solid-svg-icons";
+
   export let title = "";
 </script>
 
@@ -10,13 +11,13 @@
   <div class="uk-padding-small">
     <a href="#coasts-menu" uk-toggle uk-tooltip="title: Clickable list all Islands by Costal Region; pos: bottom">
       <div uk-tooltip="title: Index of all Islands; pos: bottom">
-        <Icon data={faBars} scale="2" />
+        <Icon data={faBars} scale="2"/>
       </div>
     </a>
   </div>
   <div class="uk-padding-small">
     <a href="/#/" uk-tooltip="title: Islands of Ireland; pos:bottom">
-      <Icon data={faMap} scale="3" />
+      <Icon data={faMap} scale="3"/>
     </a>
   </div>
   <div class="uk-child-width-1-2@s uk-card uk-card-default uk-grid-collapse" uk-grid>
@@ -28,19 +29,17 @@
     <div>
       <div class="uk-tile uk-tile-muted uk-padding-small">
         <div class="uk-text-small">
-          An experiment in exploring
-          <a href="http://www.oileain.org/">David Walsh's Oileain</a>. Prepared by Eamonn de Leastar (edeleastar@gmail.com)
+          An experiment in exploring <a href="http://www.oileain.org/">David Walsh's Oileain</a>. Prepared by Eamonn de
+          Leastar (edeleastar@gmail.com)
         </div>
       </div>
     </div>
   </div>
   <a href="/#/navigator" uk-tooltip="title: Explore Island Maps; pos:bottom">
-    <Icon data={faMapMarked} scale="3" />
-  </a>
-  <a href="http://www.oileain.org/" uk-tooltip="title: Oileain Book Site; pos:bottom">
-    <img data-src="http://www.oileain.org/wp-content/uploads/2015/05/oileain_2X.png" width="70px" height="" alt="" uk-img />
-  </a>
-  <a href="https://github.com/wit-hdip-comp-sci-2020/oileain-svelte" uk-tooltip="title: Project Source; pos:bottom">
-    <Icon data={faGithub} scale="3" />
-  </a>
+    <Icon data={faMapMarked} scale="3"/>
+  </a> <a href="http://www.oileain.org/" uk-tooltip="title: Oileain Book Site; pos:bottom"> <img
+    data-src="http://www.oileain.org/wp-content/uploads/2015/05/oileain_2X.png" width="70px" height="" alt="" uk-img/>
+</a> <a href="https://github.com/wit-hdip-comp-sci-2020/oileain-svelte" uk-tooltip="title: Project Source; pos:bottom">
+  <Icon data={faGithub} scale="3"/>
+</a>
 </div>

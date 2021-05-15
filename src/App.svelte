@@ -14,7 +14,7 @@
   <title>Oileain</title>
 </svelte:head>
 
-<Header title="Oileain" />
+<Header title="Oileain"/>
 <div class="uk-container">
-  <Router {routes} />
+  <Router {routes}/>
 </div>
