@@ -5,6 +5,7 @@
   import Home from "./pages/Home.svelte";
   import Island from "./pages/Island.svelte";
   import Navigator from "./pages/Navigator.svelte";
+  import Sidebar from "./components/Sidebar.svelte";
   import {setContext} from "svelte";
   import {Oileain} from "./services/oileain-api";
 
@@ -26,3 +27,4 @@
 <div class="uk-container">
   <Router {routes}/>
 </div>
+<Sidebar />
